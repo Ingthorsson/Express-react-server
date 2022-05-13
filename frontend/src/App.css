@@ -186,3 +186,14 @@
 	}
 }
  
+.gifs {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+  }
+  
+  video {
+	max-width: 30%;
+	margin: 15px 0;
+  }
