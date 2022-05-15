@@ -9,10 +9,9 @@ function useGiphy(query) {
     async function fetchData() {
       try {
         setLoading(true);
-        const response = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=5tRKFNX8sHZZdDLQT3ml7g0B7lhGqPej&q=${query}&limit=5&offset=0&rating=g&lang=en`);
+        const response = await fetch(`/gifs?query=${query}`);
         const json = await response.json();
 
-        console.log(json.data)
         setResults(
           json.data.map((item) => {
             return item.images.preview.mp4;
