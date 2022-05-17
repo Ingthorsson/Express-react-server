@@ -17,7 +17,6 @@ app.get('/', (req, res) => {
 
 app.use("/gifs", giphyRoute);
 
-
 // LISTEN AT PORT = PORT
 app.listen(port, () => {
     console.log(`Listening at port ${port}`);
